@@ -69,7 +69,7 @@ Prototype: Dolly the sheep
     
 ### STRUCTURAL PATTERNS
 
-Adapter: US/UK/EU AC plug adapter
+ToEuAdapter: US/UK/EU AC plug adapter
     
 Bridge: an operating system which uses drivers
 
@@ -139,7 +139,7 @@ Prototype:
     
 ### STRUCTURAL PATTERNS
 
-Adapter:
+ToEuAdapter:
 
     java.util.Arrays#asList()
     java.util.Collections#list()

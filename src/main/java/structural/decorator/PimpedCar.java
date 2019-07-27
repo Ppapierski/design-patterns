@@ -1,21 +1,30 @@
 package structural.decorator;
 
-public class PimpedCar implements RacingCar{
- NotSoFastCar car;
+public class PimpedCar implements RacingCar {
+    NotSoFastCar car;
+    boolean isNitroOn;
 
     public PimpedCar(NotSoFastCar car) {
         this.car = car;
     }
 
-    // todo implement and make it go FASTER!
-    @Override
-    public int getMaxSpeed() {
-        return 0;
+    public void turnNitroOn() {
+        this.isNitroOn = true;
     }
 
-    // todo implement and make it go FASTER!
+    public void turnNitroOff() {
+        this.isNitroOn = false;
+    }
+
+    @Override
+    public int getMaxSpeed() {
+        return isNitroOn ? car.getMaxSpeed() + 200 : car.getMaxSpeed() + 70;
+    }
+
     @Override
     public void race() {
-
+        System.out.println(
+                isNitroOn ? "TOOO FAAAAAST" : "YEEEAH"
+        );
     }
 }

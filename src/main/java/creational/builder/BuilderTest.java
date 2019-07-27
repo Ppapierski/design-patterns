@@ -22,5 +22,22 @@ public class BuilderTest {
 
         System.out.println(car);
 
+
+        String string = "Hej";
+
+        String string2 = string;
+
+//        string = "ajaja";
+
+        String string3 = new String("Hej");
+
+        System.out.println(string == string2);
+        System.out.println(string == string3);
+
+        String string4 =
+                "a" + "b" + "c";
+
+        new StringBuilder("a").append("b").append("c").toString();
+
     }
 }

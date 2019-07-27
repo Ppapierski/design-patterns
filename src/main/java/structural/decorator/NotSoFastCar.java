@@ -1,6 +1,6 @@
 package structural.decorator;
 
-public class NotSoFastCar implements RacingCar{
+public class NotSoFastCar implements RacingCar {
     @Override
     public int getMaxSpeed() {
         return 50;
