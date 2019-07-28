@@ -4,13 +4,12 @@ public class Lock {
 
     private boolean isLocked;
 
-    // todo implement
     public void lock() {
+        this.isLocked = true;
     }
 
-    // todo implement
     public void unlock() {
-
+        this.isLocked = false;
     }
 
     public boolean isLocked() {
