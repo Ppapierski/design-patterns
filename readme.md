@@ -69,7 +69,7 @@ Prototype: Dolly the sheep
     
 ### STRUCTURAL PATTERNS
 
-ToEuAdapter: US/UK/EU AC plug adapter
+Adapter: US/UK/EU AC plug adapter
     
 Bridge: an operating system which uses drivers
 
@@ -87,7 +87,7 @@ Facade: customer support desk/callcenter
 
 Chain of Responsibility: ladies at town hall/ tax office
 
-Pizza: an order in a restaurant
+Command: an order in a restaurant
 
 Memento: versioned documents (*.doc files), git commits
 
@@ -95,7 +95,7 @@ Observer: fb like button, adding a friend to fb
 
 Template Method: specified pizza, you can modify when placing order
 
-Cashier: a cashier at a shop, for your shopping cart
+Visitor: a cashier at a shop, for your shopping cart
 
 Mediator: air traffic control tower
 
@@ -118,7 +118,7 @@ Singleton:
     java.lang.Runtime#getRuntime()
     java.awt.Desktop#getDesktop()
 
-CarFactory method: 
+Factory method: 
 
     java.util.EnumSet#of()
     
@@ -139,7 +139,7 @@ Prototype:
     
 ### STRUCTURAL PATTERNS
 
-ToEuAdapter:
+Adapter:
 
     java.util.Arrays#asList()
     java.util.Collections#list()
@@ -181,7 +181,7 @@ Chain of Responsibility:
     java.util.logging.Logger#log()
     javax.servlet.Filter#doFilter()
 
-Pizza:
+Command:
 
     java.lang.Runnable
 
@@ -201,7 +201,7 @@ Template Method:
     java.io.Reader 
     java.io.Writer.
 
-Cashier:
+Visitor:
 
     javax.lang.model.element.Element and ElementVisitor
 
