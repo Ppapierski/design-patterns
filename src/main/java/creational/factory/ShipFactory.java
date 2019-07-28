@@ -23,7 +23,7 @@ public class ShipFactory {
                 .build();
     }
 
-    public static void main(String[] args) {
-        List.of(1,2,3,4,5);
-    }
+//    public static void main(String[] args) {
+//        List.of(1,2,3,4,5);
+//    }
 }

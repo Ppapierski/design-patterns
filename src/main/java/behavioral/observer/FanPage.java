@@ -9,7 +9,8 @@ public class FanPage implements Observable{
 
     private List<Observer> observerList;
 
-    public FanPage() {
+    public FanPage(String name) {
+        this.name = name;
         this.observerList = new ArrayList<>();
     }
 
@@ -26,5 +27,10 @@ public class FanPage implements Observable{
     @Override
     public void removeObserver(Observer observer) {
         observerList.remove(observer);
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
