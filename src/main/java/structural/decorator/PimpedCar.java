@@ -1,6 +1,8 @@
 package structural.decorator;
 
 public class PimpedCar implements RacingCar {
+    private static final int boostForPimped = 70;
+
     NotSoFastCar car;
     boolean isNitroOn;
 
@@ -18,7 +20,7 @@ public class PimpedCar implements RacingCar {
 
     @Override
     public int getMaxSpeed() {
-        return isNitroOn ? car.getMaxSpeed() + 200 : car.getMaxSpeed() + 70;
+        return isNitroOn ? car.getMaxSpeed() + 200 : car.getMaxSpeed() + boostForPimped;
     }
 
     @Override
